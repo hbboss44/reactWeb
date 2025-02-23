@@ -60,16 +60,16 @@ const ContactPage = () => {
           <form className="contact-form" onSubmit={handleSubmit} >
             <div className="form-group">
               <label htmlFor="name">Full Name</label>
-              <input type="text" id="name" name="FullName" placeholder="Enter your name" ref={fullName}/>
+              <input type="text" id="name" name="FullName" placeholder="Enter your name" ref={fullName} required/>
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="Email" placeholder="Enter your email" ref={mail}/>
+              <input type="email" id="email" name="Email" placeholder="Enter your email" ref={mail} required/>
             </div>
             
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="Message"rows="4" placeholder="Write your message here" ref={message}></textarea>
+              <textarea id="message" name="Message"rows="4" placeholder="Write your message here" ref={message} required></textarea>
             </div>
             <button type="submit" className="submit-button" disabled={state.submitting} onClick={print}>Send Message</button>
           </form>
