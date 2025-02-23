@@ -1,0 +1,102 @@
+/* Projects Section Styling */
+.projects-container {
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    height: 83.2vh;
+    text-align: center;
+  }
+  
+  /* Project Title */
+  .projects-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff7f50; /* Highlight Color */
+  }
+  
+  /* Projects Slider */
+  .projects-slider {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Individual Project Card */
+  .project-card {
+    background: rgba(255, 255, 255, 0.1); /* Subtle glass effect */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 127, 80, 0.4); /* Soft glow effect */
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Slick Dots */
+  .slick-dots li button:before {
+    color: white;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff7f50; /* Active dot color */
+  }
+  
+  /* Custom Prev & Next Buttons */
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 2;
+  }
+  .slick-track{
+    display: flex    ;
+        gap: 14px;
+  }
+  .slider-arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Positioning Buttons */
+  .prev {
+    left: -40px;
+  }
+  
+  .next {
+    right: -40px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .prev {
+      left: -20px;
+    }
+  
+    .next {
+      right: -20px;
+    }
+  
+    .projects-container h2 {
+      font-size: 2rem;
+    }
+  }
+  

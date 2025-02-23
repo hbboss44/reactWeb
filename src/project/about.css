@@ -1,0 +1,34 @@
+.about-container {
+    text-align: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a); /* Matching header background */
+    color: white;
+  }
+  
+  .about-container h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    margin: 0 auto 20px auto;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #e65c2f;
+  }
+  

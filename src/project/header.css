@@ -1,0 +1,130 @@
+
+.container-fluid > div{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    /* background-color:red; */
+    width: 100%;
+}
+
+.fixed-top{
+    position: sticky;
+}
+
+.navbar-toggler{
+    display: none;
+}
+
+/* media query */
+@media (max-width:800px) {
+    .navigations{
+        display: none !important;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .navbar>.container-fluid{
+        flex-wrap: nowrap;
+    }
+}
+/* header.css */
+
+.navbar {
+    background: linear-gradient(to right, #1a202c, #2d3748);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand img {
+    width: 100px;
+  }
+  
+  .navigations {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .navigations .nav-link {
+    color: #f6ad55;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  .navigations .nav-link:hover{
+    color: #e69733;
+    text-decoration: underline;
+  }
+  
+  .navigations .nav-link:focus-within {
+    color: #e69733;
+  }
+
+  .navigations .nav-link a,.nav-link>a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navigations .nav-link a:hover {
+    color: #e69733;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: rgb(247, 219, 167);
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .offcanvas {
+    background: #2d3748;
+    color: white;
+  }
+  
+  .offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f6ad55;
+  }
+  
+  
+  
+  .nav-item .nav-link {
+    color: white !important;
+    transition: color 0.3s;
+  }
+  
+  .nav-item .nav-link:hover {
+    color: #f6ad55;
+    text-decoration: underline;
+  }
+  .offcanvas-header .btn-close{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(229, 187, 110);
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navigations {
+      display: none;
+    }
+    .navbar {
+      padding: 1rem;
+    }
+    
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .offcanvas {
+      display: none !important;
+    }
+  }
+  
