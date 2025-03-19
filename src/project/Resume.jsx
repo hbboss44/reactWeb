@@ -1,4 +1,5 @@
 import resume from '../Images/Ade-Sulaiman.png'
+import "../project/resume.css";
 
 const Resume = () => {
     return ( <>
