@@ -51,19 +51,19 @@ const Header = () => {
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a class="nav-link active" aria-current="page"><NavLink to="/" style={({isActive})=>(isActive?activelink:undefined)}>Home</NavLink></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a class="nav-link"><NavLink to="/about" style={({isActive})=>(isActive?activelink:undefined)} >About</NavLink></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a class="nav-link"><NavLink to="/skills" style={({isActive})=>(isActive?activelink:undefined)} >Skills</NavLink></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a class="nav-link"><NavLink to="/project" style={({isActive})=>(isActive?activelink:undefined)} >Projects</NavLink></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-bs-dismiss="offcanvas">
             <a class="nav-link"><NavLink to="/contact" style={({isActive})=>(isActive?activelink:undefined)}>Contact</NavLink ></a>
           </li>
           
